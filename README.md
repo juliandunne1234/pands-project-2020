@@ -30,13 +30,21 @@ ______________________________________
 Research videos on youtube and summarise what was learned:
 * Link 5
 
-<p>This is all I should focus on for now
+<p>Complete this intro before final commit
 ______________________________________
 
 ## Step 3: Downloading the Iris Flower Data Set
 
+<p>Find a suitable Iris Flower Data Set CSV file online and import using Python Pandas.
 
+Issues to resolve included the following:
+* CSV file found online was missing a header row which includes the column detail.
+* Once imported to Pandas and written to a text file it truncates the data.
+** Display text in non-truncated form.
+* Read modifed text file using Pandas and print full non-truncated version in Python editor.
+<p>
 
+## Step 4:Writing Analysis.py
 
 
 
