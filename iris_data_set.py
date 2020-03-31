@@ -1,22 +1,26 @@
-# Program to import Iris_Data_SET CSV file into Python using Pandas.
-
+# Import Python Libraries to be used in the project.
 import pandas as pd
+import numpy as np
 
+# Download data set using Python Pandas.
 page = pd.read_csv(
 'https://raw.githubusercontent.com/shivanand217/Iris-flower-dataset/master/iris.csv',
-# Update dataset to include header with column ID.
-names = ["sepal_length", "sepal_width", "petal_length", "petal_width", "species"]) 
+names = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]) # Update 
+# dataset to include header with column ID.
 
-# Write dataset to text file (complete non-truncated text file).
+# Set_option is to stop python truncating the data.
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_colwidth', -1)
+
+# Write complete non-truncated dataset to text file 
 with open ("iris_data_set.txt", "w") as f:
-    pd.set_option('display.max_rows', None)
-    pd.set_option('display.max_colwidth', -1)
-    page.head()
     f.writelines(str(page))
 
-# Convert updated text file back to pandas dataframe 
-# and print to the interpreter (non-truncated file).
-page = pd.read_fwf('iris_data_set.txt')
-
+# Output a summary of each variable to a single text file:
+with open ("iris_variable_summary.txt", "w") as f:
+    f.write("Descriptive statistics: using the describe method to return:\ncount; mean; std; min and max; 25%, 50%, 75% quartiles of the dataset.\n\n")
+    f.write(str(page.describe()))
+    
+# Print modified text file including variable summary to the interpreter.
 print(page)
-
+print(page.describe())

@@ -40,11 +40,17 @@ ______________________________________
 Issues to resolve included the following:
 * CSV file found online was missing a header row which includes the column detail.
 * Once imported to Pandas and written to a text file it truncates the data.
-** Display text in non-truncated form.
+    * Display text in non-truncated form.
 * Read modifed text file using Pandas and print full non-truncated version in Python editor.
 <p>
 
 ## Step 4:Writing Analysis.py
+
+1. Output a summary of each variable to a single text file.
+
+1. Save a Histogram of each variable to png files.
+
+1. Output a scatter plot of each pair of variables.
 
 
 
