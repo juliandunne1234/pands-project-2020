@@ -46,7 +46,7 @@ Issues to resolve included the following:
 
 ## Step 4:Writing Analysis.py
 
-1. Output a summary of each variable to a single text file.
+1. Output a summary of each variable to a single text file. Write to a file named iris_variable_summary.txt using the .describe() method.
 
 1. Save a Histogram of each variable to png files.
 
