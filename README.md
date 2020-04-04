@@ -38,17 +38,17 @@ ______________________________________
 <p>Find a suitable Iris Flower Data Set CSV file online and import using Python Pandas.
 
 Issues to resolve included the following:
-* CSV file found online was missing a header row which includes the column detail.
+* ~~CSV file found online was missing a header row which includes the column detail~~ updated code to include a different URL for data set that already has header column.
 * Once imported to Pandas and written to a text file it truncates the data.
     * Display text in non-truncated form.
-* Read modifed text file using Pandas and print full non-truncated version in Python editor.
+* ~~Read modifed text file using Pandas and print full non-truncated version in Python editor~~ Remove code that is not in project scope.
 <p>
 
 ## Step 4:Writing Analysis.py
 
 1. Output a summary of each variable to a single text file. Write to a file named iris_variable_summary.txt using the .describe() method.
 
-1. Save a Histogram of each variable to png files.
+1. Save a Histogram of each variable to png files. Code was written in ipython and copied into analysis.py file. Follow up action is to keep this section of code in seperate file and call it to the analysis.py file using def function.
 
 1. Output a scatter plot of each pair of variables.
 
