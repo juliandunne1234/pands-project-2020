@@ -48,9 +48,15 @@ Issues to resolve included the following:
 
 1. Output a summary of each variable to a single text file. Write to a file named iris_variable_summary.txt using the .describe() method.
 
-1. Save a Histogram of each variable to png files. Code was written in ipython and copied into analysis.py file. Follow up action is to keep this section of code in seperate file and call it to the analysis.py file using def function.
+1. Save a Histogram of each variable to png files. Code was written in ipython to create a Histogram for a single variable. Using %logstart this code was recorded in script format which could then be copied into the analysis.py file. and used to create Histograms for the remaining variables.
 
-1. Output a scatter plot of each pair of variables.
+1. Output a scatter plot of each pair of variables. 
+A video found on youtube showing how to perform pairplots using python Seaborn
+https://uk.video.search.yahoo.com/search/video;_ylt=AwrJQ5tSyoleTmoAUhAM34lQ;_ylu=X3oDMTByZmVxM3N0BGNvbG8DaXIyBHBvcwMxBHZ0aWQDBHNlYwNzYw--?p=how+to+download+seaborn+scatter_matrix+function&fr=mcafee&guce_referrer=aHR0cHM6Ly91ay5zZWFyY2gueWFob28uY29tL3NlYXJjaD9mcj1tY2FmZWUmdHlwZT1FMjExR0I4ODVHMCZwPWhvdyt0bytkb3dubG9hZCtzZWFib3JuK3NjYXR0ZXJfbWF0cml4K2Z1bmN0aW9u&guce_referrer_sig=AQAAAJNIBxxFlctk1yWt9jzgraMiq6J37oOazPeqY4f5r48uaZLEPi_asbMdwgHABZetmfG-8FRYXvpWTg1XpVLtmuMmnvvcboyjIj8IwpmIPukz9vkzBO-nQEjeH4UbUA3y6qNUQ1xD1gptiqGa5awBm7cLpi7CEEYN-Xpt2u-0Pt7-&_guc_consent_skip=1586088607#id=1&vid=53d1d380ec502a55cf8e90142459c37f&action=view
+
+Another web search was required to find a way to save seaborn.png files:
+https://stackoverflow.com/questions/32244753/how-to-save-a-seaborn-plot-into-a-file
+
 
 
 

@@ -1,6 +1,8 @@
 # Import Python Libraries to be used in the project.
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Download data set using Python Pandas.
 df = pd.read_csv(
@@ -19,8 +21,8 @@ with open ("iris_variable_analysis.txt", "w") as f:
     f.write("Descriptive statistics: using the describe method to return:\ncount; mean; std; min and max; 25%, 50%, 75% quartiles of the dataset.\n\n")
     f.write(str(df.describe()))
 
-# Save a Histogram of each variable to png files:
-# Using matplotlib.pyplot library:
+# Creat and save a Histogram of each variable to png files:
+# Using Pythons Matplotlib Library:
 plt.hist(df['sepal_length'], label='Sepal Length')
 plt.legend()
 plt.title('Sepal Length')
@@ -52,3 +54,8 @@ plt.xlabel('Petal Width in cm')
 plt.ylabel('Frequency')
 plt.savefig('petal_width.png')
 plt.clf()
+
+# Create and save a Pair-Plot between each of the variables
+# Using the Python Seaborn Library:
+sns_plot = sns.pairplot(df[['sepal_length', 'sepal_width', 'petal_length', 'petal_width']])
+sns_plot.savefig("iris_data_set_pairplot.png")
