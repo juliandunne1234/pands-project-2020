@@ -21,7 +21,7 @@ with open ("iris_variable_analysis.txt", "w") as f:
     f.write("Descriptive statistics: using the describe method to return:\ncount; mean; std; min and max; 25%, 50%, 75% quartiles of the dataset.\n\n")
     f.write(str(df.describe()))
 
-# Creat and save a Histogram of each variable to png files:
+# Create and save a Histogram of each variable to png files:
 # Using Pythons Matplotlib Library:
 plt.hist(df['sepal_length'], label='Sepal Length')
 plt.legend()
